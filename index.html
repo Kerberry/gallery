@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/img/favicon (1).ico" type="image/x-icon">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-box">
+            <img src="./assets/img/logo/main-logo.svg#main" alt="logo" class="main-logo">
+            <h1>Gallery</h1>
+        </div>
+        <form action="" method="get" class="search" id="search">
+            <input type="text" name="search" class="search-input" placeholder="Search" autocomplete="off" autofocus="on">
+            <button type="reset" class="reset-btn"></button>
+            <button type="submit" class="search-btn"></button>
+        </form>
+    </header>
+    <main>
+        <div class="popup-window hidden">
+            <button class="close-popup"></button>
+            <button class="flip flip-back"></button>
+            <img src="" alt="" class="popup-img">
+            <button class="flip flip-up"></button>
+        </div>
+        <div class="container">            
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-text">© 2022</div>
+            <div class="footer-right">
+                <a href="https://github.com/Kerberry" class="footer-icon">
+                    <svg class="icon git">
+                        <use xlink:href="./assets/img/logo/git.svg#git"></use>
+                    </svg>
+            </a>
+            <a href="https://rs.school/js-stage0/" class="footer-icon">
+                <svg class="icon">
+                    <use xlink:href="./assets/img/logo/logo_rs.svg#rs"></use>
+                </svg>
+            </a>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

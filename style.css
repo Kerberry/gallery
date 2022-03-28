@@ -1,0 +1,231 @@
+@font-face{
+    font-family:Merienda;
+    src: url(./assets/fonts/Merienda-Bold.ttf);
+}
+@media(max-width:768px){
+    header{
+        padding: 10px 20px 15px;
+    }
+    .search{
+        width: 60%;
+        height: 70%;
+    }
+    .search-input{
+        height: 4vh;
+        font-size: 2.5vw;
+    }
+    .container{
+        padding: 0 20px;
+    }
+}
+@media(min-width:769px){
+    header{
+        padding: 10px 50px 30px;
+    }
+    .search{
+        width: 30%;
+    }
+    .search-input{
+        height: 5vh;
+        font-size: 1.5vw;
+    }
+    .container{
+        padding: 0 50px;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vw;
+    background: linear-gradient(to right, rgb(232, 238, 243) 33%, rgb(173, 209, 243) 66%, rgb(10, 122, 235));
+}
+header{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(232, 238, 243) 33%, rgb(173, 209, 243) 66%, rgb(10, 122, 235));
+}
+.logo-box{
+    display: flex;
+}
+.main-logo{
+    width: 25%;
+    margin-right: 10px;
+}
+h1{
+    font-family: Merienda, sans-serif;
+    background: linear-gradient(to bottom, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    font-size: 8vw;
+    justify-self: flex-start;
+}
+.search{
+    position: relative;
+    margin-left: auto;
+    margin-right: 5px;
+    align-self: flex-end;
+    border:none;
+    outline: none;
+}
+.search-input{
+    width: 100%;
+    border:none;
+    outline: none;
+    border-radius:18px;
+    padding-left: 10px;
+    font-style: italic;
+    color:#174186;
+}
+.search-input:focus{
+    border:3px solid#516e9c;
+}
+.search-btn,
+.reset-btn{
+    position: absolute;
+    border:none;
+    right: 10px;
+    background: #fff;
+    margin-left: auto;
+    top: 7px;
+    cursor: pointer;
+}
+.reset-btn{
+    right: 45px;
+}
+.search-btn:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 150%;
+    color: #0B2349;
+}
+.reset-btn:before {
+    content: "\f00d";
+    font-family: FontAwesome;
+    font-size: 100%;
+    color: #0B2349;
+}
+.search-btn:hover:before{
+    color:#8AA9D6;
+}
+
+.reset-btn:hover::before{
+    color:#fa0707;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(to right, rgb(232, 238, 243) 33%, rgb(173, 209, 243) 66%, rgb(10, 122, 235));
+}
+.gallery-img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:7px;
+    cursor: pointer;
+}
+.popup-window{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    height: 90vh;
+    background: rgb(195, 220, 243);
+    border-radius: 18px;
+    transition: 0.7s;
+}
+.hidden{
+    display: none;
+}
+.close-popup{
+    position: absolute;
+    background: none;
+    top:15px;
+    right: 15px;  
+    border:none;  
+    cursor:pointer;
+}
+.close-popup:before{
+    content: "\f00d";
+    font-family: FontAwesome;
+    color:#0B2349;
+    font-size: 170%;
+}
+.close-popup:hover:before,
+.flip:hover:before{
+    color:#0D61BC;
+}
+.popup-img{
+    width:90%;
+    height: auto;
+    max-height: 95%;
+    object-fit:contain;
+    border-radius: 10px;
+}
+.flip{
+    position: absolute;
+    background: none;
+    top:50%; 
+    border:none;  
+    cursor:pointer;
+}
+.flip:before{
+    content: "\f053";
+    font-family: FontAwesome;
+    color:#0B2349;
+    font-size: 170%;
+}
+.flip-back{
+    left: 10px; 
+}
+.flip-up{
+    right: 10px;
+}
+.flip-up:before{
+    content:"\f054"
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.footer-right{
+    display: flex;
+}
+.footer-icon{
+    height: 10%;
+    margin: 20px;
+}
+.footer-text{
+    font-size: 30px;
+    color:#0B2349;
+    font-weight: 700;
+}
+
+.icon{
+    height: 70px;
+    width: 70px;
+    fill:#0B2349;
+}
+.icon:hover{
+    fill: rgb(64, 139, 238);
+}
+.git{
+    height: 60px;
+}
